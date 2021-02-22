@@ -7,26 +7,36 @@ body{
 }
 /*header*/
 .bilboard{
-    background-color: #bd9354;
+    background-color: #00af91;
     text-align: center;
     padding: 30px;
     color: white;
+    font-family: Arial;
+    font-size: 18px;
+    
 }
 .profile header{
     text-align: center;
 }
 header{
     display: inline;
-    background-color: #bd9354;
+    background-color: #00af91;
 }
 
 nav{
-    background-color: #e3d18a;
-    padding: 5px;
+    background-color: #007965;
+    padding: 2px;
     position: sticky;
     top: 0;
+    overflow: auto;
 }
 
+
+.nav-ul{
+    float: left;
+    text-align:  left;
+    padding-right: 30px;
+}
 nav li{
     display: inline;
     margin-right: 10px;
@@ -34,8 +44,8 @@ nav li{
 }
 
 nav a{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 600px;
     color: white;
     text-decoration: none;
 }
@@ -47,7 +57,7 @@ nav a:hover{
 
 #content{
     float: left;
-    width: 70%;
+    width: 75%;
 }
 
 main{
@@ -56,18 +66,17 @@ main{
 }
 
 .card{
-    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
 }
 
-p::first-letter{
+.p-upper::first-letter{
     font-size: 20px;
     font-weight: bold;
     color: black;
 }
-
 
 /*Img*/
 .satu {
@@ -96,9 +105,36 @@ p::first-letter{
 }
 
 /*Aside*/
+.container-1{
+    text-align: center;
+}
+
+.yes-button{
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color :#7CBB00;
+    font-size: 16px;
+}
+
+.clear-button{
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color :#E50914;
+    font-size: 16px;
+}
 aside{
     float: right;
-    width: 30%;
+    width: 25%;
     padding-left: 20px;
 }
 
@@ -122,8 +158,8 @@ aside{
 /*Footer*/
 footer{
     padding: 20px;
-    color: black;
+    color: white;
     text-align: center;
     font-weight: bold;
-    background-color: #e3d18a;
+    background-color: #00af91;
 }
