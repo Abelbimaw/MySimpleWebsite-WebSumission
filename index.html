@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <title>Kediri Lagi</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="bilboard">
+            <h1>Kediri Lagi</h1>
+        </div>
+    </header>
+
+    <!-- NAVIGATION-->
+    <nav id="menu">
+        <ul class="links"> 
+            <li><a href="#gumul">Gumul</a></li>
+            <li> <a href="#persik">Persik</a></li>
+            <li><a href="#tahu">Tahu Takwa</a></li>
+        </ul>
+    </nav>
+
+    <!--SECTION-->
+    <section>
+        <main>
+            <div id="content">
+                <article id="gumul" class="card box">
+                    <h1>Gumul</h1>
+                    <img src="assets/images/gumul.jpg" alt="gumul picture" class="satu featured-image" >
+                    <p>Gumul merupakan salah satu iconik dari Kota Kediri yang tidak bisa dilupakan, mengapa demikian karena jika datang ke Kediri tanpa mengunjungi salah satu icon ini terasa kurang jika berkunjung di Kota ini. 
+                        Maka bagi para wisatawan jangan lupa untuk menikmati kemegahan bangunan yang merupakan titik bertemunya 5 jalur yang berbeda untuk pergi ke semua arah. Rasa hembusan angin yang kencang merupakan salah satu kesukaan para wisatawan jika berada di Gumul.
+                        Suasana Simpang Lima Gumul yang paling asik adalah waktu malam hari karena wisatawan akan dimanjakan lukisan disisi Gumul yang indah.</p>
+                    <div class="clear"></div>
+                </article>
+                <article id="persik" class="card box">
+                    <img src="assets/images/persik.jpg" alt="persik picture" class="dua featured-image" >
+                    <h1>Persik</h1>
+                    <p>
+                        Persik merupakan tim kebanggaan Kediri yang mana telah menjuarai berbagai turnamen yang ada di Indonesia dan menjadi klub yang mengikuti ajang AFC
+                    </p>
+                    <div class="clear2"></div>
+                </article>
+                <article id="tahu" class="card box">
+                    <img src="assets/images/tahu.jpg" alt="tofu picture" class="satu featured-image">
+                    <p>
+                        Tahu takwa merupakan salah satu oleh oleh yang menjadi cinderai mata dari kota ini, bahkan kota kediri juga disebut kota tahu
+                    </p>
+                    <div class="clear"></div>
+                </article>
+            </div>
+            <aside>
+                <article class="profile card">
+                    <header>
+                        <figure>
+                            <img src="assets/images/pofile.jpg" alt="profile" id="profile-img">
+                        </figure>
+                        <p id="p2">Hello</p>
+
+                     <!-- JavaScript-->
+                    <script>
+                        let que = document.getElementById("p2");
+                        que.innerHTML = 'Seberapa anda menyukai Kota Kediri dalam range (1-10) ? saya suka sebanyak <span id="count">0</span> ';
+                        let image = document.getElementById("profile-img");
+                        image.addEventListener('click', function(event){
+                            document.querySelector('#count').innerText++;
+                        });
+                    </script>
+                    </header>
+                    <section>
+                        <table>
+                            <tr>
+                                <th>Nama</th>
+                                <td>Abel Bima Wiratama</td>
+                            </tr>
+                            <tr>
+                                <th>Asal</th>
+                                <td>Kandat, Kediri</td>
+                            </tr>
+                            <tr>
+                                <th>Mob</th>
+                                <td>+6282131949778</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>abelwiratama@gmail.com</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+            </aside>
+        </main>
+    </section>
+    <footer>
+        <p>Kediri Lagi &#169; 2021, ABWlurr</p>
+    </footer>
+</body>
+</html>
